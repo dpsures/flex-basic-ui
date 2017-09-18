@@ -1,0 +1,21 @@
+<div fxLayout="row" fxLayout.xs="column">
+    <md-toolbar color="primary">
+        <span>Flex Dashboard</span>
+        <span fxFlex></span>
+        <button md-button (click)="openNotifications()">
+            <md-icon>notifications</md-icon>
+            Notices</button>
+        <button md-button (click)="openProfile()">Suresh</button>
+
+        <md-select placeholder="Select Language">
+            <md-option *ngFor="let lang of language" [value]="lang.value">
+                {{ lang.viewValue }}
+            </md-option>
+        </md-select>
+
+        <button md-button>
+            <md-icon>error_outline</md-icon>
+            Help</button>
+        <div fxFlexOffset="30%"></div>
+    </md-toolbar>
+</div>
